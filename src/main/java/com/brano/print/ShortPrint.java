@@ -4,6 +4,10 @@ import java.util.Objects;
 
 public class ShortPrint {
 
+    public static ShortPrint form() {
+        return form("");
+    }
+
     public static ShortPrint form(Object o, TextAttribute...attributes) {
         return new ShortPrint(Print.form(o, attributes));
     }

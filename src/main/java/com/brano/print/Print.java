@@ -9,6 +9,9 @@ import java.util.stream.Collectors;
 
 public class Print {
 
+    public static Print form() {
+        return form("");
+    }
 
     public static Print form(Object o, TextAttribute...attributes) {
         return new Print(o, attributes);
