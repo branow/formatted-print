@@ -50,6 +50,10 @@ public class ShortPrint {
     }
 
 
+    public ShortPrint rp(int count) {
+        return form(print.rp(count));
+    }
+
     public ShortPrint ln() {
         return form(print.newLine());
     }

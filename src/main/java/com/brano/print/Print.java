@@ -55,6 +55,11 @@ public class Print {
         return this;
     }
 
+    public Print rp(int count) {
+        String rp = toString().repeat(count - 1);
+        return and(rp);
+    }
+
     public Print newLine() {
         return and("\n");
     }
